@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="shop-header">
+        <img src="images/Logo_BW.svg" alt="Shop Logo" class="shop-logo" id="home">
+        <div class="shop-options">
+            <div class="shop-option">NEW</div>
+            <div class="shop-option">TOPS</div>
+            <div class="shop-option">BOTTOMS</div>
+            <div class="shop-option">ACCESSORIES</div>
+            <div class="shop-option" onclick="HolySea()">View Cart</div>
+        </div>
+    </div>
+    <div class="wrapper" id="new">
+        <div class="box-wide a">
+            <img src="images/banner.png">
+        </div>
+        <div class="box-tall b">
+            <img style="" src="images/poster.png" alt="fall-collection">
+        </div>
+        <div class="box-normal c">
+            <img src="images/Quotes-Slideshow.gif">
+        </div>
+        <div class="box-normal d">
+            <img style="" src="images/Clothing-gif.gif">
+        </div>
+        <div class="box-normal e" id="beanie" id="white_beanie"> <img style="" src="images/Bennnie_White.png"
+                alt="Bennnie_White"></div>
+        <div class="box-normal f" id="shirt"> <img style="" src="images/Shirt_Black.png"></div>
+        <div class="box-normal g" id="pants"> <img style="" src="images/Pants.png"></div>
+    </div>
+    <div class=" cart" id="cart">
+
+        </div>
+
+</body>
+
+<script>
+
+    const swap = (option) => {
+        let newElement = null;
+        console.log(option)
+        switch (option) {
+            case "NEW":
+                newElement = document.getElementById('new');
+                newElement.innerHTML = `
+                <div class="box-wide a">
+            <img src="images/banner.png ">
+        </div>
+        <div class="box-tall b">
+            <img style="" src="images/poster.png" alt="fall-collection">
+        </div>
+        <div class="box-normal c"> 
+            <img src="images/Quotes-Slideshow.gif">
+        </div>
+        <div class="box-normal d">
+            <img style="" src="images/Clothing-gif.gif">
+        </div>
+        <div class="box-normal e" id="beanie" id="white_beanie"> <img style="" src="images/Bennnie_White.png" alt="Bennnie_White"></div>
+        <div class="box-normal f" id="shirt"> <img style="" src="images/Shirt_Black.png"></div>
+        <div class="box-normal g" id="pants"> <img style="" src="images/Pants.png"></div>
+                            `;
+                let shirt = document.getElementById('shirt');
+                shirt.addEventListener('click', () => {
+                    window.location.href = "/shop/products/black_nameless_shirt";
+                })
+                let pants = document.getElementById('pants');
+                shirt.addEventListener('click', () => {
+                    window.location.href = "/shop/products/black_nameless_pants";
+                })
+                let beanie = document.getElementById('beanie');
+                shirt.addEventListener('click', () => {
+                    window.location.href = "/shop/products/white_beanie";
+                })
+                break;
+            case "TOPS":
+                newElement = document.getElementById('new');
+                newElement.innerHTML = `
+                                <div class="box-normal m"> Tops Placeholder</div>
+                                <div class="box-normal n"> Tops Placeholder</div>
+                                <div class="box-normal q"> Tops Placeholder</div>
+                                <div class="box-normal c"> Tops Placeholder</div>
+                                <div class="box-normal d"> Tops Placeholder</div>
+                                <div class="box-normal o"> Tops Placeholder</div>
+                                <div class="box-normal e"> Tops Placeholder</div>
+                                <div class="box-normal f"> Tops Placeholder</div>
+                                <div class="box-normal g"> Tops Placeholder</div>
+                            `;
+                break;
+            case "BOTTOMS":
+                newElement = document.getElementById('new');
+                newElement.innerHTML = `
+                                <div class="box-normal m"> Bottoms Placeholder</div>
+                                <div class="box-normal n"> Bottoms Placeholder</div>
+                                <div class="box-normal q"> Bottoms Placeholder</div>
+                                <div class="box-normal c"> Bottoms Placeholder</div>
+                                <div class="box-normal d"> Bottoms Placeholder</div>
+                                <div class="box-normal o"> Bottoms Placeholder</div>
+                                <div class="box-normal e"> Bottoms Placeholder</div>
+                                <div class="box-normal f"> Bottoms Placeholder</div>
+                                <div class="box-normal g"> Bottoms Placeholder</div>
+                            `;
+                break;
+
+            case "ACCESSORIES":
+                newElement = document.getElementById('new');
+                newElement.innerHTML = `
+                                <div class="box-normal m"> Accessories Placeholder</div>
+                                <div class="box-normal n"> Accessories Placeholder</div>
+                                <div class="box-normal q"> Accessories Placeholder</div>
+                                <div class="box-normal c"> Accessories Placeholder</div>
+                                <div class="box-normal d"> Accessories Placeholder</div>
+                                <div class="box-normal o"> Accessories Placeholder</div>
+                                <div class="box-normal e"> Accessories Placeholder</div>
+                                <div class="box-normal f"> Accessories Placeholder</div>
+                                <div class="box-normal g"> Accessories Placeholder</div>
+                            `;
+                break;
+            default:
+                break;
+        }
+    }
+
+    const selection = () => {
+        let options = document.getElementsByClassName('shop-option');
+        for (let i = 0; i < options.length; i++) {
+            options[i].addEventListener('click', () => {
+                let option = options[i].innerHTML;
+                if (option == "View Cart") return;
+                options[i].style.backgroundColor = "#aaa";
+                for (let j = 0; j < options.length; j++) {
+                    if (j != i) {
+                        options[j].style = ""
+                    }
+                }
+                swap(option);
+            })
+        }
+    }
+
+    const GardenOfEden = () => {
+        // add click listener to the shop-logo element
+        let logo = document.getElementById('home');
+        logo.addEventListener('click', () => {
+            // redirect to the home page
+            window.location.href = "/";
+        })
+
+        let shirt = document.getElementById('shirt');
+        shirt.addEventListener('click', () => {
+            // redirect to the home page
+            window.location.href = "/shop/products/white_nameless_shirt";
+        })
+
+        let pants = document.getElementById('pants');
+        pants.addEventListener('click', () => {
+            window.location.href = "/shop/products/black_nameless_pants";
+        })
+        let beanie = document.getElementById('beanie');
+        beanie.addEventListener('click', () => {
+            window.location.href = "/shop/products/white_beanie";
+        })
+    }
+
+
+
+    GardenOfEden()
+
+
+    selection();
+
+
+    const HolySea = () => {
+        let Mary = document.getElementById('cart');
+        if (Mary.classList.contains('shown')) {
+            Mary.innerHTML = "";
+            return Mary.classList.remove('shown')
+        } else {
+            Mary.innerHTML = `
+                <button class="button" onclick="HolySea()"><i class="fa fa-shopping-bag" style="font-size:24px"></i></button>
+                ` + Mary.innerHTML;
+            return Mary.classList.add('shown')
+        }
+    }
+
+    async function loadCart() {
+        let cart = await fetch('/api/cartitems').then(res => res.json()).then(data => {
+            return data;
+        });
+        let cartElement = document.getElementById('cart');
+        if (cart.length == 0) {
+            cartElement.innerHTML = `
+            <h1>Cart is empty</h1>
+        `;
+            return;
+        }
+        for (let i = 0; i < cart.length; i++) {
+            let item = cart[i];
+            console.log(item)
+
+            let itemElement = document.createElement('div');
+            itemElement.classList.add('cart-item');
+            itemElement.innerHTML = `
+            <img src="${item.imageLink}">
+            <div class="info">
+                <h2>${item.name}</h2>
+                <h1>$${item.price}</h1>
+                <a href="/api/cart/remove/${item.buyLink}/false" class="remove">Remove</a>
+            </div>
+        `;
+            cartElement.appendChild(itemElement);
+        }
+    }
+
+    loadCart();
+    const showCart = (shown) => {
+        let Mary = document.getElementById('cart');
+        if (shown.toString() == "true") {
+            console.log("shown")
+            return Mary.classList.add('shown')
+        }
+    }
+
+    showCart("<%= shown %>");
+
+</script>
+
+</html>

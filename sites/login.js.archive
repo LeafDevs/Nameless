@@ -1,0 +1,7 @@
+module.exports = {
+    name: '/login',
+    type: 1,
+    callback(req, res) {
+        res.render('login')
+    }
+}

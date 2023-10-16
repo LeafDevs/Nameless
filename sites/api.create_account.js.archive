@@ -1,0 +1,25 @@
+const Account = require("../utils/Account")
+
+module.exports = {
+    name: '/api/v1/register',
+    type: 2,
+    callback(req, res) {
+        console.log(req.body)
+        if(req.body && req.body.email) {
+            let email = req.body.email
+            console.log("Creating Account.")
+            let password = req.body.password
+            let address = req.body.address
+            let city = req.body.city
+            let state = req.body.state
+            let zip = req.body.zip
+            let name = req.body.first + " " + req.body.last
+            if(Account.findAccount(email)) {
+                res.redirect('/shop');
+                return;
+            }
+            Account.createAccount(email, password, false, state, zip, address, name, city);
+            res.redirect('/');
+        }
+    }
+}

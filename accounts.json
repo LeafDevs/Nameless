@@ -1,0 +1,39 @@
+{
+    "root@root.com": {
+        "cart": [
+            "pink_sakura_shirt",
+            "pink_sakura_shirt",
+            "pink_sakura_shirt",
+            "pink_sakura_shirt",
+            "pink_sakura_shirt",
+            "pink_sakura_shirt"
+        ],
+        "password": "root",
+        "admin": true,
+        "state": "root",
+        "zip": "root",
+        "address": "root",
+        "name": "leaf leaf",
+        "city": "root"
+    },
+    "123313@gmail.com": {
+        "cart": [],
+        "password": "root",
+        "admin": false,
+        "state": "root",
+        "zip": "root",
+        "address": "root",
+        "name": "bib fish",
+        "city": "root"
+    },
+    "bobobobob@bob.com": {
+        "cart": [],
+        "password": "bob",
+        "admin": false,
+        "state": "bobo",
+        "zip": "bobobobo",
+        "address": "bob",
+        "name": "bob bob",
+        "city": "bobo"
+    }
+}

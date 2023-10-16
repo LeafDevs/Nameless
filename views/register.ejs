@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="register.css">
+        <title>Create Account | Nameless Global</title>
+    </head>
+    <body>
+        <div class="register-form">
+            <h2>Register</h2>
+            <form id="request-form" action="/api/v1/register" method="POST">
+                <input type="text" name="first" placeholder="First Name">
+                <input type="text" name="last" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="text" name="address" placeholder="Address">
+                <input type="text" name="city" placeholder="City">
+                <input type="text" name="state" placeholder="State">
+                <input type="text" name="zip" placeholder="Zip Code">
+                <button type="submit" id="submit-button">Register</button>
+            </form>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445.6 131.28">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-7 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2, .cls-7, .cls-8, .cls-9, .cls-3, .cls-10, .cls-4, .cls-11, .cls-5 {
+        isolation: isolate;
+      }
+
+      .cls-2, .cls-7, .cls-8, .cls-4, .cls-11, .cls-5 {
+        font-family: Klee-Medium-83pv-RKSJ-H, Klee;
+        font-size: 14.82px;
+        font-weight: 500;
+      }
+
+      .cls-2, .cls-12, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        stroke: #fff;
+      }
+
+      .cls-7, .cls-8, .cls-10, .cls-11 {
+        fill: #fff;
+      }
+
+      .cls-12 {
+        fill: #000111;
+        stroke: #000111;
+      }
+
+      .cls-8, .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9, .cls-3, .cls-10 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 61.58px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        stroke: #231f20;
+      }
+
+      .cls-11, .cls-5 {
+        letter-spacing: -.05em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-12" x="81.3" y="112.7" width="319.9" height="11.4"/>
+  <text class="cls-9" transform="translate(71.6 107.6)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-3" transform="translate(71.6 107.6)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-9" transform="translate(122.3 107.6)"><tspan x="0" y="0">AMELESS</tspan></text>
+  <text class="cls-3" transform="translate(122.3 107.6)"><tspan x="0" y="0">AMELESS</tspan></text>
+  <text class="cls-10" transform="translate(66.53 104.68)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-10" transform="translate(117.23 104.68)"><tspan x="0" y="0">AMELESS</tspan></text>
+  <rect class="cls-12" x="82.8" y="44.5" width="319.9" height="11.2"/>
+  <text class="cls-7" transform="translate(320.05 124.11)"><tspan x="0" y="0">グ</tspan></text>
+  <text class="cls-2" transform="translate(320.05 124.11)"><tspan x="0" y="0">グ</tspan></text>
+  <text class="cls-11" transform="translate(334.72 124.11)"><tspan x="0" y="0">ロ</tspan></text>
+  <text class="cls-5" transform="translate(334.72 124.11)"><tspan x="0" y="0">ロ</tspan></text>
+  <text class="cls-11" transform="translate(347.18 124.11)"><tspan x="0" y="0">ー</tspan></text>
+  <text class="cls-5" transform="translate(347.18 124.11)"><tspan x="0" y="0">ー</tspan></text>
+  <text class="cls-8" transform="translate(361.11 124.11)"><tspan x="0" y="0">バ</tspan></text>
+  <text class="cls-4" transform="translate(361.11 124.11)"><tspan x="0" y="0">バ</tspan></text>
+  <text class="cls-7" transform="translate(375.35 124.11)"><tspan x="0" y="0">ル</tspan></text>
+  <text class="cls-2" transform="translate(375.35 124.11)"><tspan x="0" y="0">ル</tspan></text>
+  <polygon class="cls-6" points="71 43.9 50.4 43.9 50.4 44 40.4 44 40.4 125.7 52.8 125.7 52.8 55.7 71 55.7 71 43.9"/>
+  <polygon class="cls-6" points="414.9 124.5 435.6 124.5 435.6 124.3 445.6 124.3 445.4 44 433 44 433.2 112.8 414.9 112.8 414.9 124.5"/>
+  <rect class="cls-1" width="19" height="10"/>
+</svg>

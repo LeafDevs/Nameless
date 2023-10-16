@@ -1,0 +1,134 @@
+body {
+    font-family: monospace;
+    color: rgb(255, 136, 0);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url("images/bg.png");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    background-position: center;
+}
+.text-box {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -320px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.text-box img {
+    overflow: hidden; /* keeps the text hidden till animation */
+    width: 640px;
+    height: auto;
+    white-space: nowrap; /* doesnt go onto another liner */
+    margin: 0 auto; /* scroll effect  */
+    letter-spacing: .1rem; /* how far the letters are from eachother  */
+    animation: fade-in 1s steps(1080, end);
+}
+
+.text-box h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-family: 'Kenia', cursive;
+    animation:
+        typing 1.5s steps(640, end)
+}
+
+.text-box a {
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 3vmax;
+    margin-left: -3vmax;
+    font-family: 'Kenia', cursive;
+    -webkit-text-stroke: black 2.5px;
+    width: 6vmax;
+    font-size: 3vmax;
+    height: 3vmax;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+}
+
+.text-box a:hover {
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 3vmax;
+    margin-left: -3vmax;
+    font-family: 'Kenia', cursive;
+    -webkit-text-stroke: black 2.5px;
+    width: 6vmax;
+    font-size: 3vmax;
+    height: 3vmax;
+    color: rgb(107, 107, 107);
+    animation: color 0.35s steps(1080, end);    
+    transform: scale(1.35); 
+}
+
+@keyframes color {
+    0% { color:white }
+    100% { color: rgb(107, 107, 107); }
+}
+
+
+
+@keyframes typing {
+    from {width: 0;}
+    to { width: 100%;}
+}
+
+@keyframes fade-in {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.info {
+    width: 100%;
+    height: 25vmax;
+    background: linear-gradient(rgba(151, 151, 151, 0.0006), rgba(0,0,0,1));
+    border-radius: 15px 15px 0px 0px;
+    margin: auto;
+}
+
+.info h1 {
+    color:white;
+    justify-content: center;
+    text-align: center;
+    padding: 1vmax;
+    margin-top: 5vmax;
+    font-size: 2vmax;
+}
+
+.info p {
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5vmax;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 1.1rem;
+    font-size: 1vmax;
+}
+
+.info h2 { /* Footer */
+    justify-content: center;
+    margin-top: 6vmax;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.5vmax;
+}
+
+.info a {
+    justify-content: center;
+    margin-top: 1.5vmax;
+    margin: auto;
+    padding: 1.5vmax;
+}

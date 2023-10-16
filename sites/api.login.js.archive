@@ -1,0 +1,21 @@
+const Account = require("../utils/Account")
+
+module.exports = {
+    name: '/api/v1/login',
+    type: 2,
+    callback(req, res) {
+        if(Account.findAccount(req.body.email)) {
+            const acc =  Account.loadAccounts()[req.body.email];
+            let password = acc['password'];
+            if(req.body.password == password) {
+                req.session.username = acc['token'];
+                console.log("Passwords are correct.")
+                res.redirect('/shop');
+            } else {
+                console.log("Account Exists but password wrong.")
+            }
+        } else {
+            req.session.error = "Account does not exist."
+        }
+    }
+}

@@ -1,0 +1,7 @@
+module.exports = {
+    name: '/register',
+    type: 1,
+    callback(req, res) {
+        res.render('register')
+    }
+}

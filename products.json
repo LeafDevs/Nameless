@@ -1,0 +1,52 @@
+{
+    "white_nameless_shirt": {
+        "front": "/images/Shirt_Black.png",
+        "back": "/images/Shirt_Black.png",
+        "price": "$24.00"
+    },
+    "black_nameless_shirt": {
+        "front": "/images/Shirt_Black.png",
+        "back": "/images/Shirt_Black.png",
+        "price": "$24.00"
+    },
+    "white_nameless_hoodie": {
+        "front": "front_img_path",
+        "back": "back_img_path",
+        "price": "$40.00"
+    },
+    "black_nameless_hoodie": {
+        "front": "/images/Hoodie_black.png",
+        "back": "/images/Hoodie_black.png",
+        "price": "$40.00"
+    },
+    "white_nameless_beanie": {
+        "front": "/images/Bennnie_White.png",
+        "back": "/images/Bennnie_White.png",
+        "price": "$25.00"
+    },
+    "black_nameless_beanie": {
+        "front": "front_img_path",
+        "back": "back_img_path",
+        "price": "$25.00"
+    },
+    "gray_nameless_beanie": {
+        "front": "front_img_path",
+        "back": "back_img_path",
+        "price": "$25.00"
+    },
+    "white_nameless_sweatpants": {
+        "front": "front_img_path",
+        "back": "back_img_path",
+        "price": "$30.00"
+    },
+    "black_nameless_sweatpants": {
+        "front": "front_img_path",
+        "back": "back_img_path",
+        "price": "$30.00"
+    },
+    "gray_nameless_sweatpants": {
+        "front": "front_img_path",
+        "back": "back_img_path",
+        "price": "$30.00"
+    }
+}

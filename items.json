@@ -1,0 +1,26 @@
+{
+    "white_nameless_shirt": {
+        "name": "Nameless Shirt",
+        "buyLink": "nameless_shirt_black",
+        "price": "25.00",
+        "imageLink": "images/Shirt_black.png"
+    },
+    "black_nameless_pants": {
+        "name": "Nameless Pants",
+        "buyLink": "nameless_pants_white",
+        "price": "35.00",
+        "imageLink": "images/Pants_White.png"
+    },
+    "white_nameless_pants": {
+        "name": "Nameless Shirt",
+        "buyLink": "nameless_shirt_black",
+        "price": "35.00",
+        "imageLink": "images/Pants_Black.png"
+    },
+    "white_nameless_beanie": {
+        "name": "Nameless Beanie",
+        "buyLink": "nameless_beanie_white",
+        "price": "15.00",
+        "imageLink": "images/Bennnie_White.png"
+    }
+}
