@@ -14,7 +14,6 @@ module.exports = {
 
         let price = items[product].price;
 
-        // captialize the start of each word in the product name and remove all underscores and replace them with spaces
         let name = product.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
         res.render('product', { name: name, front: frontView, back: backView, price: price, productname: product });

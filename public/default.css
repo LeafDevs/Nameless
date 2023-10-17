@@ -5,9 +5,9 @@ body {
     height: 100%;
     margin: 0;
     background-image: url("images/bg.png");
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: #cccccc; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
     background-attachment: fixed;
     background-position: center;
 }
@@ -22,12 +22,12 @@ body {
 }
 
 .text-box img {
-    overflow: hidden; /* keeps the text hidden till animation */
+    overflow: hidden; 
     width: 640px;
     height: auto;
-    white-space: nowrap; /* doesnt go onto another liner */
-    margin: 0 auto; /* scroll effect  */
-    letter-spacing: .1rem; /* how far the letters are from eachother  */
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .1rem;
     animation: fade-in 1s steps(1080, end);
 }
 

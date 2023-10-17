@@ -1,9 +1,9 @@
 body { 
     margin: 0;
     background-image: url("images/pexels-elia-clerici-2004630.jpg");
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     overflow: hidden;

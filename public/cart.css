@@ -16,7 +16,6 @@
     box-shadow: -10px 0 25px 5px rgba(0,0,0,0.5);
 }
 
-/* create a css element for each item in the cart */
 .cart-item {
     display: flex;
     justify-content: baseline;

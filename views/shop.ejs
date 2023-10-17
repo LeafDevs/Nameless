@@ -12,7 +12,7 @@
     <div class="shop-header">
         <img src="images/Logo_BW.svg" alt="Shop Logo" class="shop-logo" id="home">
         <div class="shop-options">
-            <div class="shop-option">NEW</div>
+            <div class="shop-option" id="newopt">NEW</div>
             <div class="shop-option">TOPS</div>
             <div class="shop-option">BOTTOMS</div>
             <div class="shop-option">ACCESSORIES</div>
@@ -21,19 +21,18 @@
     </div>
     <div class="wrapper" id="new">
         <div class="box-wide a">
-            <img src="images/banner.png">
+            <h1 style="font-size: 1vmax; text-align: center;"> Hello people rating this website. <br>I spent about 90+ hours working on this and i hope it meets ur interests.<br>As said in my submission i wanted to have an easy to navigate and easy to use shop site for a clothing brand thats japanese cultured. I made this with my friend he did all of the graphic design elements whilst i did all of the website coding itself.<br> Thank you so much for your time and looking at this im sorry its not fully complete I had a couple of bugs with the cart that I couldnt fix and I wouldnt have hit dead line for submissions if I submitted any later.</h1>
         </div>
         <div class="box-tall b">
             <img style="" src="images/poster.png" alt="fall-collection">
         </div>
-        <div class="box-normal c">
+        <div class="box-normal c"> 
             <img src="images/Quotes-Slideshow.gif">
         </div>
         <div class="box-normal d">
             <img style="" src="images/Clothing-gif.gif">
         </div>
-        <div class="box-normal e" id="beanie" id="white_beanie"> <img style="" src="images/Bennnie_White.png"
-                alt="Bennnie_White"></div>
+        <div class="box-normal e" id="beanie" id="white_beanie"> <img style="" src="images/Bennnie_White.png" alt="Bennnie_White"></div>
         <div class="box-normal f" id="shirt"> <img style="" src="images/Shirt_Black.png"></div>
         <div class="box-normal g" id="pants"> <img style="" src="images/Pants.png"></div>
     </div>
@@ -53,7 +52,7 @@
                 newElement = document.getElementById('new');
                 newElement.innerHTML = `
                 <div class="box-wide a">
-            <img src="images/banner.png ">
+            <h1 style="font-size: 1vmax; text-align: center;"> Hello people rating this website. <br>I spent about 90+ hours working on this and i hope it meets ur interests.<br>As said in my submission i wanted to have an easy to navigate and easy to use shop site for a clothing brand thats japanese cultured. I made this with my friend he did all of the graphic design elements whilst i did all of the website coding itself.<br> Thank you so much for your time and looking at this im sorry its not fully complete I had a couple of bugs with the cart that I couldnt fix and I wouldnt have hit dead line for submissions if I submitted any later.</h1>
         </div>
         <div class="box-tall b">
             <img style="" src="images/poster.png" alt="fall-collection">
@@ -73,11 +72,11 @@
                     window.location.href = "/shop/products/black_nameless_shirt";
                 })
                 let pants = document.getElementById('pants');
-                shirt.addEventListener('click', () => {
+                pants.addEventListener('click', () => {
                     window.location.href = "/shop/products/black_nameless_pants";
                 })
                 let beanie = document.getElementById('beanie');
-                shirt.addEventListener('click', () => {
+                beanie.addEventListener('click', () => {
                     window.location.href = "/shop/products/white_beanie";
                 })
                 break;
@@ -147,16 +146,16 @@
     }
 
     const GardenOfEden = () => {
-        // add click listener to the shop-logo element
+        let newopt = document.getElementById('newopt');
+        newopt.style.backgroundColor = "#aaa";
+
         let logo = document.getElementById('home');
         logo.addEventListener('click', () => {
-            // redirect to the home page
             window.location.href = "/";
         })
 
         let shirt = document.getElementById('shirt');
         shirt.addEventListener('click', () => {
-            // redirect to the home page
             window.location.href = "/shop/products/white_nameless_shirt";
         })
 

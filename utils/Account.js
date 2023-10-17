@@ -17,7 +17,6 @@ class Account {
     }
 
     static getAccount(token) {
-        // get the account from the token provided
         const accounts = this.loadAccounts();
         
         for(let i = 0; i < Object.keys(accounts).length; i++) {
